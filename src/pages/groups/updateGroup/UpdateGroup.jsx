@@ -76,7 +76,6 @@ function CreateGroup() {
             <label
               className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               for="grid-password"
-              htmlFor="groupName"
             >
               Group Name
             </label>

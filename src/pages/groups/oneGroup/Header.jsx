@@ -53,11 +53,11 @@ const Header = ({ group }) => {
           >
             <div class="h-full w-full bg-black bg-opacity-80">
               <div class="text-center">
-                <h1 class="text-white text-3xl font-bold uppercase md:text-3xl items-center pt-36">
+                <h1 class="text-white text-3xl font-bold uppercase md:text-3xl items-center pt-36" name="groupName">
                   {value.groupName}
                 </h1>
                 <br />
-                <h2 class="mt-4 px-4 pt-2 text-white text-1xl  font-medium rounded focus:outline-none focus:bg-blue-500">
+                <h2 class="mt-4 px-4 pt-2 text-white text-1xl  font-medium rounded focus:outline-none focus:bg-blue-500" >
                   {value.description}
                 </h2>
               </div>
