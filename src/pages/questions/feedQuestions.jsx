@@ -42,10 +42,8 @@ function FeedQuestions({groupData, profileID}) {
   return (
     // remove this to take it out from center 
     <>
-
-    
    
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full" >
       <div className=" w-4/6 flex justify-between">
           <div>
           <input
@@ -54,6 +52,8 @@ function FeedQuestions({groupData, profileID}) {
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
               className="border-2 border-blue-500 rounded-3xl p-2 w-96"
+              role="input"
+              aria-label="feedSearch"
             />
             <button onClick={()=> setUpdate(update+1)} className="bg-blue-500 text-white rounded-3xl w-24 p-2 ml-2">
               Search
@@ -75,7 +75,7 @@ function FeedQuestions({groupData, profileID}) {
           <div className="flex flex-col w-4/6 mb-16">
 
           <div className="bg-blue-300/40">
-              <QuestionBox data={QuestionData={count: ques.Answers.length, name: ques.UserName, date: ques.createdAt, question: ques.Question, userId: userID, Tid:ques.UserId , id: ques._id , setUpdate: setUpdate, update: update}} />
+              <QuestionBox  data={QuestionData={count: ques.Answers.length, name: ques.UserName, date: ques.createdAt, question: ques.Question, userId: userID, Tid:ques.UserId , id: ques._id , setUpdate: setUpdate, update: update}} />
           </div>
           {ques.Answers.map(ans => (
             <div className="">

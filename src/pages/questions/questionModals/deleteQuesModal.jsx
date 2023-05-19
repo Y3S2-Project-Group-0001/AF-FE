@@ -46,8 +46,8 @@ function DeleteQuestionModal({ data }) {
           }
         </div> 
         <div className="flex justify-center px-4 pb-4">
-          <button onClick={()=> data.setRemoveAnswerModal(false)} className="px-4 py-2 rounded-md mr-2 text-white bg-gray-400 hover:bg-gray-500 focus:outline-none focus:bg-gray-600">Go back</button>
-          <button onClick={remove} className="px-4 py-2 rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:bg-red-700">Remove Question</button>
+          <button role="button" aria-label="cancelBut" onClick={()=> data.setRemoveAnswerModal(false)} className="px-4 py-2 rounded-md mr-2 text-white bg-gray-400 hover:bg-gray-500 focus:outline-none focus:bg-gray-600">Go back</button>
+          <button role="button" aria-label="deleteBut" onClick={remove} className="px-4 py-2 rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:bg-red-700">Remove Question</button>
         </div>
       </div>
     </div>
